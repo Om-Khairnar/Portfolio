@@ -65,8 +65,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             <Image
               alt="menu-icon"
               src="/assets/menu-icon.svg"
-              width={500}
-              height={500}
+              width={30}
+              height={30}
             />
           </button>
         )}
@@ -80,8 +80,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 <Image
                   alt="close-icon"
                   src="../assets/close-icon.svg"
-                  width={500}
-                  height={500}
+                  width={30}
+                  height={30}
                 />
               </button>
             </div>
@@ -122,3 +122,4 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 };
 
 export default Navbar;
+
