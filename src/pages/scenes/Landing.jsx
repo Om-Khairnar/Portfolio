@@ -23,7 +23,7 @@ const Landing = ({ setSelectedPage }) => {
             <Image
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full 
-                            max-w-[400px] md:max-w-[600px]"
+                            max-w-[250px] md:max-w-[350px]"
               src="/assets/profile-image.png"
               width={600}
               height={400}
@@ -32,7 +32,7 @@ const Landing = ({ setSelectedPage }) => {
         ) : (
           <Image
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="z-10 w-full max-w-[250px] md:max-w-[350px]"
             src="/assets/profile-image.png"
             width={600}
             height={400}
@@ -54,13 +54,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Om {""}
-            <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-                            before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
-            >
-              Khairnar
-            </span>
+            Om Khairnar
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">

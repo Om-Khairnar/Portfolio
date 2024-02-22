@@ -1,3 +1,4 @@
+import Image from "next/image";
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
@@ -29,7 +30,7 @@ const Project = ({ title }) => {
           porttitor accumsan tincidunt.
         </p>
       </div>
-      {/* <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} /> */}
+      <Image src={`/assets/${projectTitle}.jpeg`} alt={projectTitle} width={400} height={400} />
     </motion.div>
   );
 };
