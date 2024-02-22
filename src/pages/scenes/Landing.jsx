@@ -25,8 +25,8 @@ const Landing = ({ setSelectedPage }) => {
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full 
                             max-w-[250px] md:max-w-[350px]"
               src="/assets/profile-image.png"
-              width={600}
-              height={400}
+              width={250}
+              height={350}
             />
           </div>
         ) : (
