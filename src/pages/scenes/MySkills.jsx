@@ -61,7 +61,7 @@ const MySkills = () => {
       <div className="md:flex md:justify-between mt-16 gap-32">
         {/* FrontEnd */}
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/4 mt-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -91,9 +91,9 @@ const MySkills = () => {
           
         </motion.div>
 
-        {/* INNOVATIVE */}
+        {/* Backend */}
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/4 mt-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -113,15 +113,14 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+          <span className={styles.neon}>Node,js</span>
+          <span className={styles.neon}>Next Auth</span>
+          <span className={styles.neon}>Express Js</span>
           </p>
         </motion.div>
-        {/* IMAGINATIVE */}
+        {/* DataBAse */}
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/4 mt-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -141,15 +140,15 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+          <span className={styles.neon}>MySql</span>
+          <span className={styles.neon}>MongoDB</span>
+          <span className={styles.neon}>Firebase</span>
           </p>
         </motion.div>
-
+        
+        {/* Devops */}
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/4 mt-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -168,7 +167,11 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">GitHUB</p>
+          <p className="mt-5">
+          <span className={styles.neon}>GithuB</span>
+          <span className={styles.neon}>Git</span>
+          <span className={styles.neon}>AWS</span>
+          </p>
         </motion.div>
       </div>
     </section>
