@@ -6,10 +6,46 @@ import styles from "./Skill.module.css";
 
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const images = [
+    "/assets/lang/c.png",
+    "/assets/lang/c++.png",
+    "/assets/lang/java.png",
+    "/assets/lang/html.png",
+    "/assets/lang/css.png",
+    "/assets/lang/tailwind.png",
+    "/assets/lang/javascript.png",
+    "/assets/lang/react.png",
+    "/assets/lang/angular.png",
+    "/assets/lang/nextjs.png",
+    "/assets/lang/typescript.png",
+    "/assets/lang/git.png",
+    "/assets/lang/github copy.png",
+    "/assets/lang/node.png",
+    "/assets/lang/amazon.png",
+    "/assets/lang/firebase.png",
+  ];
+  const titles = [
+    "C",
+    "C++",
+    "Java",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "JavaScript",
+    "React.js",
+    "Angular",
+    "Next.js",
+    "TypeScript",
+    "Git",
+    "GitHub",
+    "Node.js",
+    "AWS",
+    "Firebase",
+  ];
   return (
     <section id="skills" className="pt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-32">
+      <div className="md:flex md:justify-between md:gap-16 mt-10">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -26,8 +62,8 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
+            Discover the range of skills I possess. From programming languages
+            to development tools, explore what I bring to the table.
           </p>
         </motion.div>
 
@@ -56,123 +92,20 @@ const MySkills = () => {
           )}
         </div>
       </div>
-
-      {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
-        {/* FrontEnd */}
-        <motion.div
-          className="md:w-1/4 mt-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          <div className="relative h-32">
-            <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">01</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                FrontEnd
-              </p>
-            </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+      <div className="flex justify-center flex-wrap gap-4 mt-4">
+        {/* Render images from the images array */}
+        {images.map((image, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <img
+              src={image}
+              width={100}
+              height={100}
+              alt={`Image ${index + 1}`}
+            />
+            <h6 className="text-center gap-4 mt-4 ">{titles[index]}</h6>{" "}
+            {/* Access corresponding title */}
           </div>
-          <p className="mt-5">
-            <span className={styles.neon}>HTML</span>
-            <span className={styles.neon}>CSS</span>
-            <span className={styles.neon}>JavaScript</span>
-            <span className={styles.neon}>React</span>
-            <span className={styles.neon}>TypeScript</span>
-            <span className={styles.neon}>Tailwind</span>
-          </p>
-          
-        </motion.div>
-
-        {/* Backend */}
-        <motion.div
-          className="md:w-1/4 mt-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          <div className="relative h-32">
-            <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                BackEnd
-              </p>
-            </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
-          </div>
-          <p className="mt-5">
-          <span className={styles.neon}>Node,js</span>
-          <span className={styles.neon}>Next Auth</span>
-          <span className={styles.neon}>Express Js</span>
-          </p>
-        </motion.div>
-        {/* DataBAse */}
-        <motion.div
-          className="md:w-1/4 mt-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          <div className="relative h-32">
-            <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                DataBase
-              </p>
-            </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
-          </div>
-          <p className="mt-5">
-          <span className={styles.neon}>MySql</span>
-          <span className={styles.neon}>MongoDB</span>
-          <span className={styles.neon}>Firebase</span>
-          </p>
-        </motion.div>
-        
-        {/* Devops */}
-        <motion.div
-          className="md:w-1/4 mt-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          <div className="relative h-32">
-            <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">04</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Devops
-              </p>
-            </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
-          </div>
-          <p className="mt-5">
-          <span className={styles.neon}>GithuB</span>
-          <span className={styles.neon}>Git</span>
-          <span className={styles.neon}>AWS</span>
-          </p>
-        </motion.div>
+        ))}
       </div>
     </section>
   );
