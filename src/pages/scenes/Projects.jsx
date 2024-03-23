@@ -1,6 +1,7 @@
 import Image from "next/image";
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const container = {
   hidden: {},
@@ -16,7 +17,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, overlayMessage }) => {
+const Project = ({ title, overlayMessage, overlayLink  }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -26,6 +27,13 @@ const Project = ({ title, overlayMessage }) => {
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">{overlayMessage}</p>
+        {overlayLink && (
+          <p className="mt-3 font-bold">
+            <Link href={overlayLink}>
+               Link
+            </Link>
+          </p>
+        )}
       </div>
       <Image
         src={`/assets/projects/${projectTitle}.jpeg`}
@@ -85,7 +93,8 @@ const Projects = () => {
           </div>
           <Project
             title="Project 1"
-            overlayMessage="Custom message for Project 1"
+            overlayMessage="Custom message for Project 2"
+            overlayLink="https://oldvibescaffe.web.app/"
           />
           <Project
             title="Project 2"
@@ -96,6 +105,7 @@ const Projects = () => {
           <Project
             title="Project 3"
             overlayMessage="Custom message for Project 3"
+            
           />
           <Project
             title="Project 4"
