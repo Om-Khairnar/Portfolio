@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
@@ -10,10 +8,11 @@ import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import LineGradient from "./components/LineGradient";
 import MySkills from "./scenes/MySkills";
-import Testimonials from "./scenes/Testimonials";
+import Experience from "./scenes/Experience";
 import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
+
 
 
 export default function Home() {
@@ -79,7 +78,7 @@ export default function Home() {
           amount="all"
           onViewportEnter={() => setSelectedPage("testimonials")}
         >
-          <Testimonials />
+          <Experience/>
         </motion.div>
       </div>
       <LineGradient />
@@ -96,3 +95,5 @@ export default function Home() {
     </div>
   );
 }
+
+
