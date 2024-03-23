@@ -96,11 +96,12 @@ const MySkills = () => {
         {/* Render images from the images array */}
         {images.map((image, index) => (
           <div key={index} className="flex flex-col items-center">
-            <img
+            <Image
               src={image}
               width={100}
               height={100}
               alt={`Image ${index + 1}`}
+              priority={true}
             />
             <h6 className="text-center gap-4 mt-4 ">{titles[index]}</h6>{" "}
             {/* Access corresponding title */}

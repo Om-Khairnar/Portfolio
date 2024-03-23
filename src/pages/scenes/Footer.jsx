@@ -10,7 +10,7 @@ const Footer = () => {
             Om Khairnar
           </p>
           <p className="font-playfair text-md text-yellow">
-            ©2023 OMkara. All Rights Reserved.
+            ©2024 OMkara. All Rights Reserved.
           </p>
         </div>
       </div>
