@@ -13,6 +13,7 @@ const MySkills = () => {
     "/assets/lang/html.png",
     "/assets/lang/css.png",
     "/assets/lang/tailwind.png",
+    "/assets/lang/bootstrap.png",
     "/assets/lang/javascript.png",
     "/assets/lang/react.png",
     "/assets/lang/angular.png",
@@ -23,6 +24,7 @@ const MySkills = () => {
     "/assets/lang/node.png",
     "/assets/lang/amazon.png",
     "/assets/lang/firebase.png",
+    "/assets/lang/mysql.png",
   ];
   const titles = [
     "C",
@@ -31,6 +33,7 @@ const MySkills = () => {
     "HTML",
     "CSS",
     "Tailwind CSS",
+    "bootstrap",
     "JavaScript",
     "React.js",
     "Angular",
@@ -41,6 +44,7 @@ const MySkills = () => {
     "Node.js",
     "AWS",
     "Firebase",
+    "MySql",
   ];
   return (
     <section id="skills" className="pt-10 pb-24">

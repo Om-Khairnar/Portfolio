@@ -71,6 +71,21 @@ const SocialMediaIcons = () => {
           height={40}
         />
       </a>
+
+      <a
+        className="hover:opacity-50 transition-duration-500"
+        href="mailto:om.khairnar175@gmail.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Image
+          alt="Github-link"
+          src="/assets/mail.png"
+          width={45}
+          height={45}
+        />
+      </a>
+
     </div>
   );
 };

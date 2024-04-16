@@ -13,14 +13,17 @@ const Experience = () => {
     {
       title: "Walchand College of Engineering",
       location: "sangli",
-      description: "i have graguated from here kjsv hohj vlhj vuhj",
+      description: `Completed Bachelor of Technology in Computer Science Engineering focus on algorithms, programming, and software engineering. 
+                    Engaged in projects, extracurriculars, developing skills in teamwork, problem-solving, and communication. 
+                    Achieved a CGPA of 7.34.`,
       icon: <PiGraduationCap />,
       date: "2019-2023",
     },
     {
       title: "GROUPON TECHNOLOGIES PRIVATE LIMITED",
       location: "Pune",
-      description: "i have graguated from here kjsv hohj vlhj vuhj",
+      description: `Developed front-end pages with Next.js & React, including reusable component library. Integrated RESTful APIs for 
+                    dynamic data. Implemented user authentication with JWT tokens. Provided insights for seamless backend integration.`,
       icon: <FaReact />,
       date: "Present",
     },
@@ -60,14 +63,12 @@ const Experience = () => {
               dateClassName="text-white"
               date={experience.date}
               icon={experience.icon}
-              iconStyle={{ background: "#fff", color: "#000"}} 
+              iconStyle={{ background: "#fff", color: "#000" }}
             >
               <h2 className="vertical-timeline-element-title font-bold">
                 {experience.title}
               </h2>
-              <p>
-                {experience.location}
-              </p>
+              <p>{experience.location}</p>
               <p>{experience.description}</p>
             </VerticalTimelineElement>
           ))}
