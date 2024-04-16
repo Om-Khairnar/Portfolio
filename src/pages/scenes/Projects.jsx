@@ -92,7 +92,7 @@ const Projects = () => {
             BEAUTIFUL USER INTERFACES
           </div>
           <Project
-            title="Old Vibe Cafe"
+            title="Project 1"
             overlayMessage="Created Cafe management System using Angular and Firebase"
             overlayLink="https://oldvibescaffe.web.app/"
           />
@@ -108,7 +108,7 @@ const Projects = () => {
             
           />
           <Project
-            title="CodePen Profile"
+            title="Project 4"
             overlayMessage="Explore my CodePen projects showcasing my skills in JavaScript!"
             overlayLink="https://codepen.io/Om-Khairnar"
           />
