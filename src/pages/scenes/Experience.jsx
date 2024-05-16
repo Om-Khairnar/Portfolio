@@ -29,7 +29,7 @@ const Experience = () => {
     },
   ];
   return (
-    <section id="testimonials" className="pt-32 pb-16">
+    <section id="experience" className="pt-32 pb-16">
       {/* HEADING */}
       <motion.div
         className="md:w-1/3 text-center md:text-left"
