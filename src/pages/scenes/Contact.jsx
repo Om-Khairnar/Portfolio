@@ -30,7 +30,7 @@ const Contact = () => {
         >
           <div>
             <p className="font-playfair font-semibold text-4xl">
-              <span className="text-yellow">Let's Discuss </span>Your Project
+              <span className="text-yellow">Let&apos;s Discuss </span>Your Project
             </p>
             <div className="flex md:justify-end my-5">
               <LineGradient width="w-2/3" />
