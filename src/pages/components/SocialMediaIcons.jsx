@@ -23,7 +23,7 @@ const SocialMediaIcons = () => {
         rel="noreferrer"
       >
         <Image
-          alt="twitter-link" 
+          alt="twitter-link"
           src="/assets/twitter.png"
           width={40}
           height={40}
@@ -37,7 +37,7 @@ const SocialMediaIcons = () => {
         rel="noreferrer"
       >
         <Image
-          alt="facebook-link" 
+          alt="facebook-link"
           src="/assets/facebook.png"
           width={40}
           height={40}
@@ -51,7 +51,7 @@ const SocialMediaIcons = () => {
         rel="noreferrer"
       >
         <Image
-          alt="instagram-link" 
+          alt="instagram-link"
           src="/assets/instagram.png"
           width={40}
           height={40}
@@ -71,21 +71,6 @@ const SocialMediaIcons = () => {
           height={40}
         />
       </a>
-
-      <a
-        className="hover:opacity-50 transition-duration-500"
-        href="mailto:om.khairnar175@gmail.com"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Image
-          alt="Github-link"
-          src="/assets/mail.png"
-          width={45}
-          height={45}
-        />
-      </a>
-
     </div>
   );
 };
