@@ -17,7 +17,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, overlayMessage, overlayLink  }) => {
+const Project = ({ title, overlayMessage, overlayLink }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -29,9 +29,7 @@ const Project = ({ title, overlayMessage, overlayLink  }) => {
         <p className="mt-7">{overlayMessage}</p>
         {overlayLink && (
           <p className="mt-3 font-bold">
-            <Link href={overlayLink}>
-               Link
-            </Link>
+            <Link href={overlayLink}>Link</Link>
           </p>
         )}
       </div>
@@ -69,9 +67,9 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+          Explore a selection of my latest projects, showcasing creativity and
+          skill across various domains. From innovative solutions to captivating
+          experiences, discover the breadth of my work
         </p>
       </motion.div>
 
@@ -105,7 +103,6 @@ const Projects = () => {
           <Project
             title="Project 3"
             overlayMessage="Custom message for Project 3"
-            
           />
           <Project
             title="Project 4"
