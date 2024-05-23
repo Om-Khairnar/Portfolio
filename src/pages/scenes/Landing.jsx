@@ -61,6 +61,7 @@ const Landing = ({ setSelectedPage }) => {
             Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
             viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
           </p>
+          
         </motion.div>
         {/* CALL TO ACTIONS */}
         <motion.div

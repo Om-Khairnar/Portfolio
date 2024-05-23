@@ -6,10 +6,9 @@ import { FaDownload } from "react-icons/fa";
 import CForm from "./CForm";
 
 const Contact = () => {
-
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = `${process.env.PUBLIC_URL}/assets/Resume_of_Om_Khairnar.pdf`;
+    link.href = "/assets/Resume_of_Om_Khairnar.pdf";
     link.download = "Resume_of_Om_Khairnar.pdf";
     link.click();
   };
@@ -30,12 +29,17 @@ const Contact = () => {
         >
           <div>
             <p className="font-playfair font-semibold text-4xl">
-              <span className="text-yellow">Let&apos;s Discuss </span>Your Project
+              <span className="text-yellow">Let&apos;s Discuss </span>Your
+              Project
             </p>
             <div className="flex md:justify-end my-5">
               <LineGradient width="w-2/3" />
             </div>
           </div>
+          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+            Feel free to contact me for career prospects, business services, and
+            other professional inquiries!
+          </p>
           <button
             className="p-2 px-8 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded-full flex items-center justify-center"
             onClick={handleDownload}
@@ -83,8 +87,7 @@ const Contact = () => {
               <LineGradient width="w-3/4" />
             </div>
           </div>
-          <CForm/>
-          
+          <CForm />
         </motion.div>
       </div>
     </section>
