@@ -12,30 +12,26 @@ const Landing = ({ setSelectedPage }) => {
       id="home"
       className="md:flex md:justify-between md:items-center md:h-full gao-16 py-10"
     >
-      {/*Image Section */}
+      {/* Image Section */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
-          <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 
-                        before:rounded-t-[400px] before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full 
-                        before:border-2 before:border-blue before:z-[-1]"
-          >
+          <div className="relative z-0 ml-20">
+            <div className="absolute -top-20 -left-20 rounded-full w-full max-w-[600px] h-full border-2 border-blue z-[-1]"></div>
             <Image
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full 
-                            max-w-[250px] md:max-w-[350px]"
-              src="/assets/profile-image.png"
-              width={250}
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 rounded-full w-full max-w-[350px]"
+              src="/assets/pro1.png"
+              width={350}
               height={350}
             />
           </div>
         ) : (
           <Image
             alt="profile"
-            className="z-10 w-full max-w-[250px] md:max-w-[350px]"
-            src="/assets/profile-image.png"
-            width={600}
-            height={400}
+            className="z-10 rounded-full w-full max-w-[250px]"
+            src="/assets/pro1.png"
+            width={250}
+            height={250}
           />
         )}
       </div>
@@ -58,10 +54,11 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+            Hi there! I&apos;m Om Khairnar, a passionate software developer
+            specializing in front-end web development. Currently, I&apos;m honing my
+            skills as a web developer, with a focus on crafting engaging user
+            experiences. Welcome to my portfolio!
           </p>
-          
         </motion.div>
         {/* CALL TO ACTIONS */}
         <motion.div
