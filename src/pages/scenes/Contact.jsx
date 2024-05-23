@@ -2,7 +2,7 @@ import Image from "next/image";
 import LineGradient from "../components/LineGradient";
 
 import { motion } from "framer-motion";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaEye} from "react-icons/fa";
 import CForm from "./CForm";
 
 const Contact = () => {
@@ -40,13 +40,24 @@ const Contact = () => {
             Feel free to contact me for career prospects, business services, and
             other professional inquiries!
           </p>
-          <button
-            className="p-2 px-8 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded-full flex items-center justify-center"
-            onClick={handleDownload}
-          >
-            <span className="mr-2">Resume</span>
-            <FaDownload />
-          </button>
+          <div className="flex gap-4 mt-5">
+            <button
+              className="p-2 px-8 bg-yellow font-semibold text-deep-blue hover:bg-red hover:text-white transition duration-500 rounded-full flex items-center justify-center"
+              onClick={handleDownload}
+            >
+              <span className="mr-2">Download Resume</span>
+              <FaDownload />
+            </button>
+            <a
+              href="/assets/Resume_of_Om_Khairnar.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 px-8 bg-yellow font-semibold text-deep-blue hover:bg-red hover:text-white transition duration-500 rounded-full flex items-center justify-center"
+            >
+              <span className="mr-2">View Resume</span>
+              <FaEye />
+            </a>
+          </div>
 
           <div className="mt-4">
             {" "}
