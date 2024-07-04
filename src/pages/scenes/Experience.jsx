@@ -46,7 +46,7 @@ const Experience = () => {
           MY <span className="text-red">Experience</span>
         </p>
         <LineGradient width="w-1/3" />
-        <p className="mt-10">What People are Saying About My Work.</p>
+        {/* <p className="mt-10">What People are Saying About My Work.</p> */}
       </motion.div>
       <div>
         <VerticalTimeline>

@@ -96,7 +96,8 @@ const Projects = () => {
           />
           <Project
             title="Project 2"
-            overlayMessage="Custom message for Project 2"
+            overlayMessage="The Oversize is an ecommerce platform dedicated to selling oversized t-shirts. This project showcases my expertise in full-stack web development, utilizing React and Next.js for a responsive and dynamic frontend, Sanity for a flexible and scalable backend, and Stripe for secure payment processing. Together, these technologies create a seamless and engaging shopping experience."
+            overlayLink="https://theoversize.vercel.app/"
           />
 
           {/* ROW 2 */}
