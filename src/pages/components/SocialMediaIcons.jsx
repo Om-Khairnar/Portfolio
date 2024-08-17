@@ -46,13 +46,13 @@ const SocialMediaIcons = () => {
 
       <a
         className="hover:opacity-50 transition-duration-500"
-        href="https://www.instagram.com"
+        href="https://leetcode.com/u/Omkara2002/"
         target="_blank"
         rel="noreferrer"
       >
         <Image
           alt="instagram-link"
-          src="/assets/instagram.png"
+          src="/assets/leetcode.png"
           width={40}
           height={40}
         />
