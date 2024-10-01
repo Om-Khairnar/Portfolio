@@ -96,14 +96,15 @@ const Projects = () => {
           />
           <Project
             title="Project 2"
-            overlayMessage="The Oversize is an ecommerce platform dedicated to selling oversized t-shirts. This project showcases my expertise in full-stack web development, utilizing React and Next.js for a responsive and dynamic frontend, Sanity for a flexible and scalable backend, and Stripe for secure payment processing. Together, these technologies create a seamless and engaging shopping experience."
+            overlayMessage="The Oversize is an ecommerce platform for oversized t-shirts, built using React and Next.js for a responsive frontend, Sanity for the backend, and Stripe for payment processing. It highlights my full-stack web development skills and creates a seamless shopping experience."
             overlayLink="https://theoversize.vercel.app/"
           />
 
           {/* ROW 2 */}
           <Project
             title="Project 3"
-            overlayMessage="Custom message for Project 3"
+            overlayMessage="TODO App is built using the MEAN stack (MongoDB, Express, Angular, Node.js), allowing users to perform all CRUD operations. MongoDB Compass was used to manage and visualize the database"
+            overlayLink="https://github.com/Om-Khairnar/Front-end-of-MEAN-Stack-TODO-App"
           />
           <Project
             title="Project 4"
