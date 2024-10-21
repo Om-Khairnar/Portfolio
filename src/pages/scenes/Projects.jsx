@@ -113,7 +113,8 @@ const Projects = () => {
           />
           <Project
             title="Project 5"
-            overlayMessage="Custom message for Project 5"
+            overlayMessage="Building a Hackathon App using React and Next.js to solve real-world problems and enhance my skills in web development."
+            overlayLink="https://hackathonaii.vercel.app/"
           />
 
           {/* ROW 3 */}
