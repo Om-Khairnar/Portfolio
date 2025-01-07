@@ -120,7 +120,8 @@ const Projects = () => {
           {/* ROW 3 */}
           <Project
             title="Project 6"
-            overlayMessage="Custom message for Project 6"
+            overlayMessage="A dynamic and interactive online code editor that allows developers to create and showcase HTML, CSS, and JavaScript projects in real-time, offering a seamless coding experience in a visually engaging environment"
+            overlayLink="https://scriptpads.netlify.app/"
           />
           <Project
             title="Project 7"
