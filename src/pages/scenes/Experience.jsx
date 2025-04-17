@@ -25,7 +25,18 @@ const Experience = () => {
       description: `Developed front-end pages with Next.js & React, including reusable component library. Integrated RESTful APIs for 
                     dynamic data. Implemented user authentication with JWT tokens. Provided insights for seamless backend integration.`,
       icon: <FaReact />,
-      date: "Present",
+      date: "june 2020 - feb 2025",
+    },
+    {
+      title: "Hazedawn limited",
+      location: "Pune",
+      description: `At Hazedawn Limited, I worked as a Software Developer where I debugged and resolved critical issues in both front-end 
+      and back-end applications, enhancing overall stability and performance. I developed and improved web application features using React, 
+      Next.js, Angular, and Node.js, while effectively integrating front-end and back-end components based on project requirements. I also 
+      utilized Supabase for database operations and real-time data handling, and worked with various CMS platforms, including Sanity CMS, 
+      to manage and deliver dynamic content efficiently.`,
+      icon: <FaReact />,
+      date: "feb 2025 - present",
     },
   ];
   return (
